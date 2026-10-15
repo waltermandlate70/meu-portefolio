@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07101f;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #0b1629;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #182e50;
+}
+
+header h1 {
+    color: white;
+}
+
+header span,
+.destaque,
+section h2 {
+    color: #1677ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #e51b3e;
+}
+
+.inicio {
+    min-height: 80vh;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #0b172b;
+}
+
+.inicio div {
+    max-width: 650px;
+}
+
+.inicio h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    margin: 10px 0;
+}
+
+.inicio h2 span {
+    color: #e51b3e;
+}
+
+.inicio h3 {
+    color: #b9c9e2;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    color: #c0ccdd;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1677ff;
+}
+
+.botao {
+    display: inline-block;
+    background: #b31331;
+    color: white;
+    padding: 11px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background: #1677ff;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+section > p {
+    max-width: 800px;
+    margin: 10px auto;
+    color: #bdc9da;
+}
+
+.lista,
+.projetos,
+.contactos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.lista div,
+.projetos article,
+.contactos p {
+    background: #0d1b31;
+    border: 1px solid #203a61;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.lista div {
+    width: 180px;
+}
+
+.lista h3,
+.projetos h3 {
+    color: #e51b3e;
+    margin-bottom: 8px;
+}
+
+.projetos article {
+    width: 300px;
+    text-align: left;
+}
+
+.projetos img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.projetos p,
+.contactos p {
+    color: #bdc9da;
+}
+
+.projetos article:hover,
+.lista div:hover {
+    border-color: #1677ff;
+}
+
+.contactos {
+    margin-bottom: 25px;
+}
+
+.contactos p {
+    min-width: 200px;
+}
+
+footer {
+    background: #050b15;
+    text-align: center;
+    padding: 20px;
+    color: #9eacc0;
+    border-top: 2px solid #182e50;
+}
+
+@media (max-width: 700px) {
+    header,
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .inicio h2 {
+        font-size: 32px;
+    }
+
+    .perfil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projetos article {
+        width: 100%;
+        max-width: 350px;
+    }
+}
